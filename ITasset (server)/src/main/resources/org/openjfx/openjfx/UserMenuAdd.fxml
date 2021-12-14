@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="925.0" style="-fx-background-color: #0b0859;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.UserMenuAddController">
+   <children>
+      <AnchorPane layoutY="175.0" prefHeight="450.0" prefWidth="925.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="addBtn" layoutX="361.0" layoutY="294.0" mnemonicParsing="false" onAction="#addInfo" prefHeight="43.0" prefWidth="217.0" text="Добавить актив" />
+            <TextField fx:id="name" layoutX="352.0" layoutY="51.0" prefHeight="43.0" prefWidth="235.0" promptText="Введите название" />
+            <TextField fx:id="price" layoutX="352.0" layoutY="112.0" prefHeight="43.0" prefWidth="235.0" promptText="Введите стоимость" />
+            <TextField fx:id="termOfUse" layoutX="352.0" layoutY="173.0" prefHeight="43.0" prefWidth="235.0" promptText="Введите срок службы" />
+            <Button layoutX="14.0" layoutY="393.0" mnemonicParsing="false" onAction="#onBack" prefHeight="43.0" prefWidth="151.0" text="Вернуться назад" />
+            <Button fx:id="addDepreciationBtn" layoutX="361.0" layoutY="358.0" mnemonicParsing="false" onAction="#addDepreciation" prefHeight="43.0" prefWidth="217.0" text="Произвести оценку эффективности" />
+            <TextField fx:id="incomeMoney" layoutX="352.0" layoutY="232.0" prefHeight="43.0" prefWidth="235.0" promptText="Введите годовую прибыль" />
+         </children>
+      </AnchorPane>
+      <Label alignment="BASELINE_CENTER" layoutX="289.0" layoutY="65.0" prefHeight="50.0" prefWidth="347.0" text="Добавление актива" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

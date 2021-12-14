@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="925.0" snapToPixel="false" style="-fx-background-color: #0b0859;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.UserMenuShowDepreciationController">
+   <children>
+      <Label alignment="BASELINE_CENTER" layoutX="206.0" layoutY="31.0" prefHeight="38.0" prefWidth="513.0" text="Показатели эффективности" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="37.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutY="101.0" prefHeight="464.0" prefWidth="924.0">
+         <content>
+            <TableView fx:id="showSecondTable" maxHeight="1001.0" maxWidth="1343.0" minHeight="452.0" minWidth="866.0" prefHeight="452.0" prefWidth="929.0">
+              <columns>
+                  <TableColumn prefWidth="29.0" text="id">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="Id" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="213.0" styleClass="f" text="Название">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="name" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn minWidth="0.0" prefWidth="135.0" styleClass="f" text="Годовые издержки">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="yearPrice" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn minWidth="0.0" prefWidth="135.0" styleClass="f" text="Месячный износ %">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="monthPercent" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="135.0" styleClass="f" text="Окупаемсоть">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="payBack" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="135.0" styleClass="f" text="Рентабельность">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="rentability" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="135.0" styleClass="f" text="Выгода">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="totalBenefit" />
+                     </cellValueFactory>
+                  </TableColumn>
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+    <AnchorPane layoutY="565.0" minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="924.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="150.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Картинки%20для%20курсача/Назад.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="7.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBack" prefHeight="136.0" prefWidth="148.0" style="-fx-background-color: transparent;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

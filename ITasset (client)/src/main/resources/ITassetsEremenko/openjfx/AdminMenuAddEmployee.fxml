@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="925.0" style="-fx-background-color: #0b0859;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ITassetsEremenko.openjfx.AdminMenuAddEmployeeController">
+   <children>
+      <AnchorPane layoutY="166.0" prefHeight="459.0" prefWidth="925.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="addBtnEmpl" layoutX="345.0" layoutY="264.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="43.0" prefWidth="235.0" text="Добавить сотрудника" />
+            <TextField fx:id="nameEmployee" layoutX="345.0" layoutY="58.0" prefHeight="43.0" prefWidth="235.0" promptText="Введите имя" />
+            <TextField fx:id="surname" layoutX="345.0" layoutY="122.0" prefHeight="43.0" prefWidth="235.0" promptText="Введите фамилию" />
+            <TextField fx:id="department" layoutX="345.0" layoutY="187.0" prefHeight="43.0" prefWidth="235.0" promptText="Введите отдел " />
+            <Button layoutX="14.0" layoutY="392.0" mnemonicParsing="false" onAction="#onBack" prefHeight="43.0" prefWidth="151.0" text="Вернуться назад" />
+         </children>
+      </AnchorPane>
+      <Label alignment="BASELINE_CENTER" layoutX="253.0" layoutY="78.0" prefHeight="50.0" prefWidth="419.0" text="Добавление сотрудников" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

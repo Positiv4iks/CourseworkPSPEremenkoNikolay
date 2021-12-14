@@ -1,0 +1,6 @@
+org\openjfx\AuthorizationUserController.class
+org\openjfx\AuthorizationController.class
+org\openjfx\AuthorizationAdminController.class
+org\openjfx\DataObject.class
+module-info.class
+org\openjfx\Connection.class

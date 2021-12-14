@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="925.0" style="-fx-background-color: #0b0859;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ITassetsEremenko.openjfx.AdminMenuGraphicShowController">
+   <children>
+      <AnchorPane layoutY="210.0" prefHeight="414.0" prefWidth="925.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button layoutX="316.0" layoutY="55.0" mnemonicParsing="false" onAction="#showYearGraphic" prefHeight="63.0" prefWidth="272.0" text="График среднегодовой прибыли активов" />
+            <Button fx:id="showBtn" layoutX="316.0" layoutY="169.0" mnemonicParsing="false" onAction="#showMonthGraphic" prefHeight="63.0" prefWidth="272.0" text="График суммарной прибыли " />
+            <Button layoutX="367.0" layoutY="287.0" mnemonicParsing="false" onAction="#onBack" prefHeight="45.0" prefWidth="171.0" text="Вернуться назад" />
+         </children>
+      </AnchorPane>
+      <Label alignment="BASELINE_CENTER" layoutX="311.0" layoutY="70.0" prefHeight="50.0" prefWidth="303.0" text="Выбор графиков" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

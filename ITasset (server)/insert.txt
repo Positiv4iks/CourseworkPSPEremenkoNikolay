@@ -1,0 +1,1 @@
+INSERT `admins`(`id`, `login`, `password`) VALUES ('1', 'root','root');
